@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", serif;
+}
+body{
+    background-color: #1a202c;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    margin: 2rem auto;
+    max-width:  1200px;
+}
+.navigation ul{
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+
+}
+h1{
+    color: white;
+    padding: 0 0.5em;
+}
+.navigation a{
+    text-decoration: none;
+    color: white
+}
+.navigation a:hover{
+    color: #3b82f6;
+}
+hr{
+    opacity: 10%;
+}
+.front{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5em auto;
+    max-width: 1200px;
+
+}
+.frontsub{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.name{
+    font-size: 40px;
+    color: white;
+    margin-left: 62px;
+}
+.Title{
+    font-size: 50px;
+    color: #3b82f6;
+    margin-left: 52px;
+}
+.circular-image {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    margin: 0 auto;
+    margin-right: 50px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* une légère lueur */
+    transition: transform 0.3s ease;
+  }
+
+.circular-image:hover {
+    transform: scale(1.05); /* effet zoom au survol */
+}
+.frontBtn{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    transform: scale(1.05); /* effet zoom au survol */
+}
+.hireMe{
+    text-align: center;
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 1.5rem 1.3rem;
+    text-shadow: 0px 4px 4px black;
+    display: flex;
+    margin-left: 80px;
+    
+}
+.hireMe:hover{
+    transform: scale(1.05); /* effet zoom au survol */
+}
+.cv{
+    background-color: rgba(57, 62, 70, 0.75);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    text-shadow: 0px 4px 4px black;
+    display: flex;
+    align-items:  center;
+    gap: 0.5rem;
+    backdrop-filter: blur(4px);
+}
+.cv:hover{
+    transform: scale(1.05); /* effet zoom au survol */
+}
+.aboutMe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+    gap: 10rem;
+}
+.aboutContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+.aboutTitle{
+    align-self: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.aboutTitle span{
+    color: #3b82f6;
+}
+.abouttext{
+    text-align: left;
+    max-width: 600px;
+    line-height: 1.6;
+}
+.certification-section {
+    padding: 60px 20px;
+    background-color: #1a202c;
+    text-align: center;
+  }
+  
+  .certification-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color:#3b82f6;
+  }
+  
+  .certification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .certification-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .certification-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .certification-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  
+  .MyWork {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.workContainer {
+    max-width: 800px;
+}
+
+.workTitle {
+    color: #3b82f6;
+    font-size: 2.5rem;
+}
+
+.worktext a img {
+    width: 24px;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+.contactcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+.contactTittle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+.Contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5rem;
+    gap: 20rem;
+    margin-left: 50px;
+}
+.Contact h3, .Contact a{
+    color: white;
+    text-decoration: none;
+}
+.email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.email img{
+   background-color:#3b82f6;
+   border-radius: 50%;
+   padding: 0.5rem;
+
+}
+.socialMediaIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.SocialMedia a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #3b82f6;
+    backdrop-filter: blur(4px);
+    padding: 1rem;
+}
+.SocialMedia img{
+    width:24px;
+    height: 24px;
+
+}
+/* Tablet view (1024px and down) */
+@media (max-width: 1024px) {
+    header, .front, .aboutMe, .contactcontainer, .Contact {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .front {
+        gap: 2rem;
+    }
+
+    .Title, .name {
+        margin-left: 0;
+    }
+
+    .hireMe {
+        margin-left: 0;
+    }
+
+    .aboutMe {
+        gap: 3rem;
+    }
+
+    .Contact {
+        gap: 5rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/* Small tablets / phones (768px and down) */
+@media (max-width: 768px) {
+    .navigation ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .circular-image {
+        width: 200px;
+        height: 200px;
+        margin-right: 0;
+    }
+
+    .Title {
+        font-size: 36px;
+    }
+
+    .name {
+        font-size: 32px;
+    }
+
+    .abouttext {
+        max-width: 90%;
+    }
+
+    .certification-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contactTittle {
+        font-size: 1.5rem;
+    }
+
+    .socialMediaIcon {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+}
+
+/* Mobile (480px and down) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .Title {
+        font-size: 28px;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+    .hireMe, .cv {
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .aboutTitle {
+        font-size: 1.5rem;
+    }
+
+    .certification-title {
+        font-size: 1.8rem;
+    }
+
+    .workTitle {
+        font-size: 1.8rem;
+    }
+
+    .contactTittle {
+        font-size: 1.3rem;
+    }
+
+    .SocialMedia a {
+        padding: 0.7rem;
+    }
+
+    .Contact {
+        gap: 3rem;
+        flex-direction: column;
+    }
+}
